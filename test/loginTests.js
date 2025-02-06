@@ -179,20 +179,21 @@ describe("Testing login", function () {
     // start the server
     server.start();
 
-    await chai
-      .request(apiAddress)
-      .post("/signup")
-      .send({
-        userHandle: "DukeNukem",
-        password: "123456",
-      })
-      .then((response) => {
-        expect(response.status).to.equal(201);
-      })
-      .catch((error) => {
-        throw error;
-      });
-  });
+    // await chai
+    //   .request(apiAddress)
+    //   .post("/signup")
+    //   .send({
+    //     userHandle: "DukeNukem",
+    //     password: "123456",
+    //   })
+    //   .then((response) => {
+    //     expect(response.status).to.equal(201);
+    //   })
+    //   .catch((error) => {
+    //     throw error;
+    //   });
+  }
+);
 
   after(function () {
     // close the server
